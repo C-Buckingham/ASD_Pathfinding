@@ -3,6 +3,8 @@ template <class T>
 class doublyLinkedList
 {
 public:
+
+private:
 	//Node creation for the double linked list
 	struct node{
 		T data;
@@ -12,6 +14,9 @@ public:
 		node *next;
 	};
 
-private:
+	//Pointer to the address of the first node
+	node *first;
+	//Pointer to the address of the last node
+	node *last;
 
 };
