@@ -28,11 +28,7 @@ private:
 };
 
 template <class T>
-Node<T>::Node()
-{
-};
+Node<T>::Node(){};
 
 template <class T>
-Node<T>::~Node()
-{
-};
+Node<T>::~Node(){};
