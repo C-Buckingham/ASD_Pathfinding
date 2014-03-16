@@ -20,7 +20,7 @@ public:
 	double getData(int i, int j) const { return data[i*N + j]; } 
 
 	//Outputs the desired size of the desired matrix onto the screen
-	/*void outputData(int row, int column)
+	void outputData(int row, int column)
 	{
 		for (int i = 0; i < row; i++)
 		{
@@ -31,7 +31,7 @@ public:
 			std::cout << std::endl;
 		}
 
-	}*/	
+	}	
 	
 	//~Matrix() { delete[] data; };
 

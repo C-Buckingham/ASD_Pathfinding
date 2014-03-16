@@ -14,7 +14,26 @@ double* readTXT(char *fileName, int sizeR, int sizeC);
 
 int main()
 {
-	
+	int M = 30; int N = 20;
+
+	double* input_data = 0;
+
+	cout << endl;
+	cout << "Data from text file -------------------------------------------" << endl;
+
+	// .pgm image is stored in inputFileName, change the path in your program appropriately
+	char* inputFileName = "C:\\Users\\Chris\\Desktop\\layout.txt";
+	input_data = readTXT(inputFileName, M, N);
+
+	Matrix A(M, N, input_data);
+
+	A.outputData(M, N);
+
+	system("PAUSE");
+
+	delete[] input_data;
+
+	return 0;
 }
 
 // Read .txt file with image of size RxC, and convert to an array of doubles
